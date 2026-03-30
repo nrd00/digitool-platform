@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Create professional resumes in minutes with ATS-friendly templates.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "https://iili.io/BdowY1n.png"
+  },
+  {
+    "id": 2,
+    "name": "Job Tracker",
+    "description": "Track your job applications and deadlines efficiently.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Application tracking", "Notifications", "Export reports"],
+    "icon": "https://iili.io/BdowCga.png"
+  },
+  {
+    "id": 3,
+    "name": "Cover Letter Genius",
+    "description": "Generate tailored cover letters in seconds.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Custom templates", "AI suggestions", "Downloadable PDF"],
+    "icon": "https://iili.io/BdowzeR.png"
+  },
+  {
+    "id": 4,
+    "name": "Interview Prep Master",
+    "description": "Practice with mock interviews and get instant feedback.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Mock interviews", "Feedback reports", "Video recording"],
+    "icon": "https://iili.io/Bdow7qX.png"
+  },
+  {
+    "id": 5,
+    "name": "Portfolio Designer",
+    "description": "Build stunning online portfolios to showcase your work.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Drag & drop editor", "Custom domains", "Responsive templates"],
+    "icon": "https://iili.io/Bdow1e4.png"
+  },
+  {
+    "id": 6,
+    "name": "Skill Tracker",
+    "description": "Track and showcase your skills and certifications.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Skill badges", "Progress charts", "Downloadable report"],
+    "icon": "https://iili.io/BdowY1n.png"
+  },
+  {
+    "id": 7,
+    "name": "Salary Calculator",
+    "description": "Estimate your salary and benefits accurately.",
+    "price": 3.99,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Salary breakdown", "Tax estimation", "Comparison charts"],
+    "icon": "https://iili.io/BdowCga.png"
+  },
+  {
+    "id": 8,
+    "name": "Career Insights",
+    "description": "Get personalized career insights and growth tips.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Career recommendations", "Skill analysis", "Job trends"],
+    "icon": "https://iili.io/Bdow1e4.png"
+  }
+]

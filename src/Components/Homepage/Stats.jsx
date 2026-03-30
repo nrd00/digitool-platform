@@ -10,8 +10,8 @@ const statsData = [
 const Stats = () => {
     return (
         <section className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] py-20'>
-            <div className="container flex ">
-                {statsData.map(stat => <Stat stat={stat}/>)}
+            <div className="container flex">
+                {statsData.map(stat => <Stat key={stat.id} stat={stat}/>)}
             </div>
         </section>
     );
