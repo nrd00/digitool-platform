@@ -5,7 +5,7 @@ import featureImage from '../../assets/banner.png';
 
 const Banner = () => {
     return (
-        <div className='container py-21.25 grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center"'>
+        <section className='container py-21.25 grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center"'>
             <div className="banner-content">
                 <span className="sticker bg-[#E1E7FF] p-2 rounded-3xl inline-flex items-center gap-x-2 mb-3"> <img src={circle} alt="Circle" /> New: AI-Powered Tools Available</span>
                 <h1 className='text-6xl font-extrabold text-[#101727]'>Supercharge Your Digital Workflow</h1>
@@ -25,7 +25,7 @@ Explore Products</p>
             <div className="banner-img flex justify-end">
                 <img src={featureImage} alt="Banner Image" />
             </div>
-        </div>
+        </section>
     );
 };
 

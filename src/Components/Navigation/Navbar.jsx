@@ -4,7 +4,7 @@ import shoppingCart from '../../assets/products/shopping-cart.png'
 const Navbar = () => {
     return (
         
-        <div className='container'>
+        <header className='container'>
             <nav className='flex justify-between py-5'>
             <a href="#" className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent text-4xl font-extrabold'>DigiTools</a>
             <ul className='flex gap-x-8 items-center'>
@@ -20,7 +20,7 @@ const Navbar = () => {
                 <button className='bg-linear-to-r from-[#9514FA] to-[#4F39F6] px-4 py-3 rounded-3xl text-white font-semibold'>Get Started</button>
             </div>
         </nav>
-        </div>
+        </header>
     );
 };
 
