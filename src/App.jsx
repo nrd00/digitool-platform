@@ -4,6 +4,7 @@ import Pricing from './Components/Homepage/Pricing'
 import Stats from './Components/Homepage/Stats'
 import Navbar from './Components/Navigation/Navbar'
 import { Suspense } from 'react';
+import Started from './Components/Started'
 
 
 const fetchCard = async () => {
@@ -22,10 +23,10 @@ function App() {
       <Banner />
       <Stats />
       
-      <Suspense fallback={"Loading...."}>
+      <Suspense fallback={<span className="loading loading-infinity loading-xl"></span>}>
       <Pricing priceCard={pricePromise}/>
       </Suspense>
-      
+      <Started />
     </>
   )
 }
