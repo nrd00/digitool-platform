@@ -5,6 +5,7 @@ import Stats from './Components/Homepage/Stats'
 import Navbar from './Components/Navigation/Navbar'
 import { Suspense, useState } from 'react';
 import Started from './Components/Started'
+import Packages from './Components/Packages/Packages'
 
 
 const fetchCard = async () => {
@@ -28,6 +29,7 @@ function App() {
       <Pricing priceCard={pricePromise} cart={cart} setCart={setCart}/>
       </Suspense>
       <Started />
+      <Packages />
     </>
   )
 }
