@@ -6,6 +6,7 @@ import Navbar from './Components/Navigation/Navbar'
 import { Suspense, useState } from 'react';
 import Started from './Components/Started'
 import Packages from './Components/Packages/Packages'
+import Footer from '../src/Components/Footer/Footer'
 
 
 const fetchCard = async () => {
@@ -30,6 +31,7 @@ function App() {
       </Suspense>
       <Started />
       <Packages />
+      <Footer />
     </>
   )
 }
