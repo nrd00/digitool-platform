@@ -1,8 +1,16 @@
 import React from 'react';
 import TickMark from '../../assets/tick-mark.png';
 
-const PriceCard = ({card}) => {
-    console.log(card);
+const PriceCard = ({card, setCart}) => {
+
+    const handleToCart = (card) => {
+        setCart((prev) => {
+    const exists = prev.find(item => item.id === card.id);
+    if (exists) return prev;
+    return [...prev, card];
+    });
+    }
+    
     
     return (
         <div className="price-card border border-[#F2F2F2] py-4 px-4 rounded-2xl relative">
@@ -25,7 +33,10 @@ const PriceCard = ({card}) => {
                     card.features.map((ft, i) => <li key={i} className='flex items-center gap-x-2 text-[16px] text-[#627382] pb-2'><img src={TickMark} alt="Tick Mark" /> {ft}</li>)
                 }
             </ul>
-            <button className='w-full bg-linear-to-r from-[#9514FA] to-[#4F39F6] px-4 py-3 rounded-3xl text-white font-semibold'>Buy Now</button>
+            <button 
+            className='w-full bg-linear-to-r from-[#9514FA] to-[#4F39F6] px-4 py-3 rounded-3xl text-white font-semibold'
+            onClick={()=>handleToCart(card)}
+            >Buy Now</button>
         </div>
     );
 };

@@ -30,7 +30,7 @@ const Started = () => {
             <p className='text-2xl text-[#627382] text-center'>Start using premium digital tools in minutes, not hours.</p>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6 pt-10'>
             {
-                getStartedSteps.map(step => <Start step={step}/>)
+                getStartedSteps.map(step => <Start key={step.id} step={step}/>)
             }
             </div>
             </div>
