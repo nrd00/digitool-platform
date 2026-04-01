@@ -1,10 +1,12 @@
 import React from 'react';
+import { toast } from "react-toastify";
 
 const CartItem = ({item, setCart}) => {
     console.log(item);
 
     const handleRemove = (id) => {
         setCart((prevCart) => prevCart.filter(item => item.id !== id));
+        toast.error(`${item.name} removed from cart`);
     };
     
     return (

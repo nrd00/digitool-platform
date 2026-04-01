@@ -7,6 +7,8 @@ import { Suspense, useState } from 'react';
 import Started from './Components/Started'
 import Packages from './Components/Packages/Packages'
 import Footer from '../src/Components/Footer/Footer'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const fetchCard = async () => {
@@ -22,6 +24,7 @@ function App() {
 
   return (
     <>
+       <ToastContainer />
       <Navbar cart={cart}/>
       <Banner />
       <Stats />

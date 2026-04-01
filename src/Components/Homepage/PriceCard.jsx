@@ -1,14 +1,12 @@
 import React from 'react';
 import TickMark from '../../assets/tick-mark.png';
+import { toast } from "react-toastify";
 
 const PriceCard = ({card, setCart}) => {
 
     const handleToCart = (card) => {
-        setCart((prev) => {
-    const exists = prev.find(item => item.id === card.id);
-    if (exists) return prev;
-    return [...prev, card];
-    });
+        setCart((prev) => [...prev, card]);
+        toast.success(`${card.name} added to cart`);
     }
     
     
@@ -35,6 +33,7 @@ const PriceCard = ({card, setCart}) => {
             </ul>
             <button 
             className='w-full bg-linear-to-r from-[#9514FA] to-[#4F39F6] px-4 py-3 rounded-3xl text-white font-semibold'
+            type="button"
             onClick={()=>handleToCart(card)}
             >Buy Now</button>
         </div>
